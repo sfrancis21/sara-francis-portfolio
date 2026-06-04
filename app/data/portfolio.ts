@@ -36,7 +36,7 @@ export const projects: Project[] = [
     github: "https://github.com/sfrancis21/GoogleCalendarProject",
     description:
       "A Java-based recreation of Google Calendar built with Java Swing as part of a team project, featuring multiple calendars, event creation and management, and recurring event series with full editing functionality.",
-    video: "", // paste the YouTube/Vimeo link after uploading the demo
+    video: "https://youtu.be/1GB8PHHSRjE",
 
   },
   {
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     github:"",
     description:
       "A 2D top-down pixel art shooter built in Unreal Engine as a personal project. Features include character movement, an inventory and item system, AI enemies driven by behavior trees, and tile map level design. Built using Unreal Blueprints as a way to explore game development outside of coursework.",
-    video: "", // paste the YouTube/Vimeo link after uploading the demo
+    video: "https://youtu.be/ldjUQz__SUQ", 
 
   },
 ];
