@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# local demo videos (host on YouTube/Vimeo instead — see app/data/portfolio.ts)
+/public/videos/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
