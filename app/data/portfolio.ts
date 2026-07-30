@@ -33,7 +33,7 @@ export type Project = {
 export const profile: Profile = {
   name: "Sara Francis",
   about:
-    "Hello, I'm Sara Francis, a full-stack software engineer and CS graduate student at Northeastern. I've built everything from a Goodreads remake in the MERN stack to an Android habit tracker where you hatch creatures to stay motivated. I also enjoy game development using C++ and Unreal. I'm currently looking for full-stack or software engineering roles in the Boston area.",
+    "Hello, I'm Sara Francis, a full-stack software engineer and CS graduate student at Northeastern, with a strong interest in game development. I've built everything from a Goodreads remake in the MERN stack to a custom ECS-based game engine in C++, and an Android habit tracker where you hatch creatures to stay motivated. I'm currently looking for full-stack or software engineering roles in the Boston area.",
   github: "https://github.com/sfrancis21",
   linkedin: "https://www.linkedin.com/in/sara-francis-916680262/",
   email: "sarafrancis1@me.com",
@@ -51,20 +51,12 @@ export const projects: Project[] = [
 
   },
   {
-    name: "Google Calendar Recreation",
-    github: "https://github.com/sfrancis21/GoogleCalendarProject",
-    description:
-      "A recreation of Google Calendar built with Java and Java Swing as part of a team project, featuring multiple calendars, event creation and management, and recurring event series with full editing functionality.",
-    video: "https://youtu.be/1GB8PHHSRjE",
-    tech: ["Java", "Java Swing"],
-
-  },
-  {
     name: "Goodreads Website Recreation",
     github: "https://github.com/vitakh/goodreads-web-app",
     github2: "https://github.com/vitakh/goodreads-node-server-app",
+    demo: "https://goodreads-web-app.vercel.app",
     description:
-      "A recreation of Goodreads.com built with two other developers. This full-stack web app uses React, Node.js/Express, and MongoDB, with the frontend deployed on Vercel and the backend on Render. Users can search books, add reviews, and save them to different shelves, while authors can claim ownership of books to link them to their account. It also includes an admin profile for removing users, monitoring reviews, and approving author requests. The live deployment can be accessed here: goodreads-web-app.vercel.app",
+      "A recreation of Goodreads.com built with two other developers. This full-stack web app uses React, Node.js/Express, and MongoDB, with the frontend deployed on Vercel and the backend on Render. Users can search books, add reviews, and save them to different shelves, while authors can claim ownership of books to link them to their account. It also includes an admin profile for removing users, monitoring reviews, and approving author requests. The live deployment can be accessed here: ",
     video: "https://youtu.be/BbbjcS837EE",
     tech: ["React", "Node.js", "Express", "MongoDB"],
 
@@ -75,6 +67,15 @@ export const projects: Project[] = [
     description: "A custom-built, ECS-based game engine in C++, used to create a Pac-Man remake. It features levels of increasing difficulty, AI enemy movement, a menu system, and a functioning sprite/animation system.",
     video: "https://youtu.be/Tmd_gV-3ejY",
     tech: ["C++", "ECS"],
+
+  },
+  {
+    name: "Google Calendar Recreation",
+    github: "https://github.com/sfrancis21/GoogleCalendarProject",
+    description:
+      "A recreation of Google Calendar built with Java and Java Swing as part of a team project, featuring multiple calendars, event creation and management, and recurring event series with full editing functionality.",
+    video: "https://youtu.be/1GB8PHHSRjE",
+    tech: ["Java", "Java Swing"],
 
   },
   {

@@ -39,7 +39,6 @@ export default function ProjectCard({ project }: { project: Project }) {
   } else if (project.github) {
     links.push({ label: "View on GitHub →", href: project.github });
   }
-  if (project.demo) links.push({ label: "Live demo →", href: project.demo });
 
   return (
     <article className="border-b border-zinc-200 py-10 dark:border-zinc-800">
@@ -66,6 +65,16 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       <p className="mt-3 max-w-2xl leading-7 text-zinc-600 dark:text-zinc-400">
         {project.description}
+        {project.demo && (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-zinc-900 underline underline-offset-2 dark:text-zinc-100"
+          >
+            {project.demo.replace(/^https?:\/\//, "")}
+          </a>
+        )}
       </p>
 
       {project.tech && project.tech.length > 0 && (
