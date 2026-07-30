@@ -7,9 +7,14 @@ export default function About() {
       <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
         {profile.name} Portfolio
       </h1>
+      
 
       <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
         {profile.about}
+      </p>
+
+      <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
+        {profile.email}
       </p>
 
       <nav className="mt-6 flex flex-wrap gap-3 text-sm font-medium">

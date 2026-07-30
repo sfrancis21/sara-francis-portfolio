@@ -30,27 +30,56 @@ function toEmbedUrl(url: string): string | null {
 export default function ProjectCard({ project }: { project: Project }) {
   const embedUrl = project.video ? toEmbedUrl(project.video) : null;
 
+  // Build the list of links. Two repos are labeled Frontend/Backend;
+  // a single repo just says "View on GitHub".
+  const links: { label: string; href: string }[] = [];
+  if (project.github && project.github2) {
+    links.push({ label: "Frontend →", href: project.github });
+    links.push({ label: "Backend →", href: project.github2 });
+  } else if (project.github) {
+    links.push({ label: "View on GitHub →", href: project.github });
+  }
+  if (project.demo) links.push({ label: "Live demo →", href: project.demo });
+
   return (
     <article className="border-b border-zinc-200 py-10 dark:border-zinc-800">
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <h2 className="text-2xl font-semibold tracking-tight">
           {project.name}
         </h2>
-        {project.github && (
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-zinc-600 underline-offset-4 hover:text-zinc-900 hover:underline dark:text-zinc-400 dark:hover:text-zinc-100"
-          >
-            View on GitHub →
-          </a>
+        {links.length > 0 && (
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-zinc-600 underline-offset-4 hover:text-zinc-900 hover:underline dark:text-zinc-400 dark:hover:text-zinc-100"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         )}
       </div>
 
       <p className="mt-3 max-w-2xl leading-7 text-zinc-600 dark:text-zinc-400">
         {project.description}
       </p>
+
+      {project.tech && project.tech.length > 0 && (
+        <ul className="mt-4 flex flex-wrap gap-2">
+          {project.tech.map((tech) => (
+            <li
+              key={tech}
+              className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+      )}
 
       {embedUrl && (
         <div className="mt-6 aspect-video w-full overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800">
