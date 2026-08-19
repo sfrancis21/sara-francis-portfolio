@@ -47,7 +47,7 @@ export const projects: Project[] = [
     demo: "https://apps.apple.com/us/app/hatchbit-habit-tracker/id6801626466",
     description:"Hatchbit is a habit-tracking app that motivates users by having them hatch and collect pixel-art creatures. Originally built for Android using Kotlin and Firebase, it's now live on the App Store as a cross-platform React Native app. Built with one other student, Saurabh Mishra, who also created the demo video below. The repository is private. The app store page for Hatchbit can be found here: ",
     video: "https://youtube.com/shorts/YziY8USDPCY?feature=share",
-    tech: ["Kotlin", "Firebase", "Android", "React Native"],
+    tech: ["Kotlin", "Firebase", "Android", "React Native", "TypeScript"],
 
   },
   {
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description:
       "A recreation of Goodreads.com built with two other developers. This full-stack web app uses React, Node.js/Express, and MongoDB, with the frontend deployed on Vercel and the backend on Render. Users can search books, add reviews, and save them to different shelves, while authors can claim ownership of books to link them to their account. It also includes an admin profile for removing users, monitoring reviews, and approving author requests. The live deployment can be accessed here: ",
     video: "https://youtu.be/BbbjcS837EE",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
+    tech: ["React", "Node.js", "Express", "MongoDB", "TypeScript", "JavaScript"],
 
   },
   {
