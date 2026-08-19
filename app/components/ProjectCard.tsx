@@ -13,6 +13,9 @@ function toEmbedUrl(url: string): string | null {
     }
     if (host === "youtube.com" || host === "m.youtube.com") {
       if (u.pathname.startsWith("/embed/")) return url;
+      if (u.pathname.startsWith("/shorts/")) {
+        return `https://www.youtube.com/embed/${u.pathname.slice("/shorts/".length)}`;
+      }
       const id = u.searchParams.get("v");
       return id ? `https://www.youtube.com/embed/${id}` : null;
     }

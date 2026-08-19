@@ -42,11 +42,11 @@ export const profile: Profile = {
 
 export const projects: Project[] = [
   {
-    name: "Habit Tracking Mobile App",
+    name: "Published iOS Habit Tracking App",
     github: "",
-    description:
-      "Hatchbit is an Android habit-tracking app built with Kotlin and Firebase that motivates users by hatching and collecting fun pixel-art creatures. It was made with one other student, Saurabh Mishra, who also created the demo video below. We're currently migrating it to React Native to get it onto the App Store so the repository is private.",
-    video: "https://youtu.be/Unj3meponUU",
+    demo: "https://apps.apple.com/us/app/hatchbit-habit-tracker/id6801626466",
+    description:"Hatchbit is a habit-tracking app that motivates users by having them hatch and collect pixel-art creatures. Originally built for Android using Kotlin and Firebase, it's now live on the App Store as a cross-platform React Native app. Built with one other student, Saurabh Mishra, who also created the demo video below. The repository is private. The app store page for Hatchbit can be found here: ",
+    video: "https://youtube.com/shorts/YziY8USDPCY?feature=share",
     tech: ["Kotlin", "Firebase", "Android", "React Native"],
 
   },
@@ -63,7 +63,7 @@ export const projects: Project[] = [
   },
   {
     name: "Custom C++ Pac-Man Game",
-    github: "",
+    github: "https://github.com/sfrancis21/Pacman-Game",
     description: "A custom-built, ECS-based game engine in C++, used to create a Pac-Man remake. It features levels of increasing difficulty, AI enemy movement, a menu system, and a functioning sprite/animation system.",
     video: "https://youtu.be/Tmd_gV-3ejY",
     tech: ["C++", "ECS"],
